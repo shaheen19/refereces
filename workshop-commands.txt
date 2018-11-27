@@ -1,0 +1,292 @@
+    1  sed 2,9800d movie | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+    2  ",$i)}' > movie.sh
+    3  sed 2,9800d wdb_accused.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+    4  ",$i)}' > wdb_accused.csv.sh
+    5  sed 2,9800d wdb_accused_family.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+    6  ",$i)}' > wdb_accused_family.csv.sh
+    7  sed 2,9800d wdb_appeal.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+    8  ",$i)}' > wdb_appeal.csv.sh
+    9  sed 2,9800d wdb_calendarcustom.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   10  ",$i)}' > wdb_calendarcustom.csv.sh
+   11  sed 2,9800d wdb_case.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   12  ",$i)}' > wdb_case.csv.sh
+   13  sed 2,9800d wdb_case_person.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   14  ",$i)}' > wdb_case_person.csv.sh
+   15  sed 2,9800d wdb_commission.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   16  ",$i)}' > wdb_commission.csv.sh
+   17  sed 2,9800d wdb_complaint.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   18  ",$i)}' > wdb_complaint.csv.sh
+   19  sed 2,9800d wdb_confession.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   20  ",$i)}' > wdb_confession.csv.sh
+   21  sed 2,9800d wdb_counterstrategy.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   22  ",$i)}' > wdb_counterstrategy.csv.sh
+   23  sed 2,9800d wdb_demonicpact.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   24  ",$i)}' > wdb_demonicpact.csv.sh
+   25  sed 2,9800d wdb_denunciation.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   26  ",$i)}' > wdb_denunciation.csv.sh
+   27  sed 2,9800d wdb_devilappearance.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   28  ",$i)}' > wdb_devilappearance.csv.sh
+   29  sed 2,9800d wdb_elf_fairyelements.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   30  ",$i)}' > wdb_elf_fairyelements.csv.sh
+   31  sed 2,9800d wdb_imprisonment.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   32  ",$i)}' > wdb_imprisonment.csv.sh
+   33  sed 2,9800d wdb_linkedtrial.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   34  ",$i)}' > wdb_linkedtrial.csv.sh
+   35  sed 2,9800d wdb_malice.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   36  ",$i)}' > wdb_malice.csv.sh
+   37  sed 2,9800d wdb_mentionedaswitch.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   38  ",$i)}' > wdb_mentionedaswitch.csv.sh
+   39  sed 2,9800d wdb_movestohla.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   40  ",$i)}' > wdb_movestohla.csv.sh
+   41  sed 2,9800d wdb_musicalinstrument.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   42  ",$i)}' > wdb_musicalinstrument.csv.sh
+   43  sed 2,9800d wdb_ordeal.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   44  ",$i)}' > wdb_ordeal.csv.sh
+   45  sed 2,9800d wdb_othercharges.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   46  ",$i)}' > wdb_othercharges.csv.sh
+   47  sed 2,9800d wdb_othernamedwitch.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   48  ",$i)}' > wdb_othernamedwitch.csv.sh
+   49  sed 2,9800d wdb_person.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   50  ",$i)}' > wdb_person.csv.sh
+   51  sed 2,9800d wdb_prevcommission.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   52  ",$i)}' > wdb_prevcommission.csv.sh
+   53  sed 2,9800d wdb_propertydamage.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   54  ",$i)}' > wdb_propertydamage.csv.sh
+   55  sed 2,9800d wdb_ref_parish.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   56  ",$i)}' > wdb_ref_parish.csv.sh
+   57  sed 2,9800d wdb_reference.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   58  ",$i)}' > wdb_reference.csv.sh
+   59  sed 2,9800d wdb_religiousmotif.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   60  ",$i)}' > wdb_religiousmotif.csv.sh
+   61  sed 2,9800d wdb_ritualobject.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   62  ",$i)}' > wdb_ritualobject.csv.sh
+   63  sed 2,9800d wdb_shapechanging.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   64  ",$i)}' > wdb_shapechanging.csv.sh
+   65  sed 2,9800d wdb_source.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   66  ",$i)}' > wdb_source.csv.sh
+   67  sed 2,9800d wdb_torture.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   68  ",$i)}' > wdb_torture.csv.sh
+   69  sed 2,9800d wdb_trial.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   70  ",$i)}' > wdb_trial.csv.sh
+   71  sed 2,9800d wdb_trial_person.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   72  ",$i)}' > wdb_trial_person.csv.sh
+   73  sed 2,9800d wdb_weathermodification.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   74  ",$i)}' > wdb_weathermodification.csv.sh
+   75  sed 2,9800d wdb_whitemagic.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   76  ",$i)}' > wdb_whitemagic.csv.sh
+   77  sed 2,9800d wdb_witchesmeetingplace.csv | awk -F"," '{for(i=1;i<NF;i++) printf("%s VARCHAR(45) NOT NULL,
+   78  ",$i)}' > wdb_witchesmeetingplace.csv.sh
+   79  mkdir swc-test
+   80  ls
+   81  cd Downloads
+   82  cd data-shell
+   83  ls
+   84  cd data-shell
+   85  cd ..
+   86  cd data-shell
+   87  ls
+   88  cd data
+   89  ls
+   90  cd pdb
+   91  cd ls
+   92  ls
+   93  ls -rth
+   94  ls -l
+   95  man ls
+   96  pwd
+   97  cd .
+   98  cd data-shell
+   99  cd ~
+  100  pwd
+  101  cd /Desktop
+  102  ls
+  103  cd Desktop
+  104  cd data-shell
+  105  ls
+  106  ls -F
+  107  data=process
+  108  mv ../pizza.cfg ../solar.pdf .
+  109  cd data-process
+  110  ls
+  111  mkdir data-process
+  112  ls
+  113  cd data-process
+  114  mv ../pizza.cfg ../solar.pdf .
+  115  ls
+  116  cd data-shell
+  117  cd ..
+  118  ls
+  119  cp notes.txt data-process/
+  120  cd data-process/
+  121  ls
+  122  ls
+  123  mv notes.txt notes-nelly.txt
+  124  ls
+  125  ls ../
+  126  mv ../notes-nelly.txt ../notes.txt
+  127  cd ..
+  128  mkdir swc-test
+  129  ls
+  130  cd swc-test
+  131  ls
+  132  nano swc-notes.txt
+  133  nano test.notes.text
+  134  rm test.notes.txt
+  135  rm -r swc/
+  136  cd ..
+  137  rm -r swc/
+  138  ls
+  139  rm -r swc-test/
+  140  ls
+  141  cd molecules
+  142  ls
+  143  wc propane.pdb
+  144  wc *.pdb
+  145  wc -1*.pdb
+  146  wc -l *.pdb
+  147  wc -l $pdb > length.txt
+  148  wc -l *pdb >length.txt
+  149  ls
+  150  cat length.txt
+  151  less length.txt
+  152  sort length.txt
+  153  sort -n length.txt 
+  154  sort -n length.txt  > sorted-lengths.txt
+  155  ls
+  156  head -n 1 sorted-lengths.txt 
+  157  tail -n - sorted-lengths.txt 
+  158  tail -n 1 sorted-lengths.txt 
+  159  tail -n 2 sorted-lengths.txt 
+  160  sort -n length.txt | head -n 1
+  161  cd ..
+  162  cd data
+  163  ls
+  164  cat salmon.txt
+  165  uniq salmon.txt
+  166  sort salmon.txt | uniq 
+  167  cat animals.txt
+  168  cat animals.txt | head -n 4 | tail -n 3 | -r >final.txt
+  169  cat animals.txt | head -n 5 | tail -n 3 | -r >final.txt
+  170  cat animals.txt | head -n 5 | tail -n 3 | sort -r >final.txt
+  171  ls
+  172  cat final.txt
+  173  history >history.txt
+  174  cd ..
+  175  cd creatures/
+  176  ls
+  177  cp *.dat original-*.dat
+  178  for filename in basilisk.dat unicorn.dat; do head -n 3 $filename; done
+  179  cat basilisk.dat 
+  180  cd ..
+  181  ls
+  182  cd moleculles/
+  183  cd molecules/
+  184  ls
+  185  for datafile in *.pdb; do  ls $datafile; done
+  186  for datafile in *.pdv; do ls *.pdb; done
+  187  for datafile in *.pdb; do ls *.pdb; done
+  188  ls
+  189  for chem in *pdb; do ls $chem > test.txt; done
+  190  ls
+  191  cat test.txt
+  192  for chem in *pdb; do ls $chem > test.txt; done
+  193  ls
+  194  cat test.txt
+  195  history
+  196  history > history.txt
+  197  git --version
+  198  cd ~
+  199  cd Desktop
+  200  git -v
+  201  git config --global user.name "Robina Shaheen"
+  202  git config --global user.email "binashaheen@gmail.com"
+  203  pwd
+  204  ls
+  205  mkdir SWC-git
+  206  cd SWC-git
+  207  ls
+  208  git init
+  209  ls -A
+  210  git status
+  211  nano references.txt
+  212  git add references.txt
+  213  git commit -m "created references.txt"
+  214  nano references.txt 
+  215  git status
+  216  git commit -m "a new reference gandolf added"
+  217  nano references.txt 
+  218  git add
+  219  git add references.txt
+  220  git status
+  221  git commit -m "a new reference gandolf added"
+  222  nano references.txt 
+  223  git add references.txt
+  224  git status
+  225  git commit -m "added pupperino"
+  226  git log
+  227  nano references.txt 
+  228  git add references.txt
+  229  git commit -m "Felix added"
+  230  nano references.txt 
+  231  git add references.txt 
+  232  git commit -m "shaheen added"
+  233  git log -oneline
+  234  git log --oneline
+  235  git diff HEAD ffd17f7 references.txt
+  236  git checkout285cd4a references.txt
+  237  cat references.txt
+  238  git checkout HEAD references.txt
+  239  cat references.txt 
+  240  git checkout references.txt
+  241  git log --oneline 
+  242  git checkout ea969d6 references.txt
+  243  git checkout ea9b9d6 references.txt
+  244  cat references.txt
+  245  git checkout HEAD  ea9b9d6 references.txt
+  246  git checkout ea9b9d6
+  247  cat references.txt
+  248  git checkout master
+  249  cat references.txt
+  250  git log --oneline
+  251  git checkout -b test-branch
+  252  cat references.txt 
+  253  git checkout HEAD references.txt
+  254  git status
+  255  git reset references.txt
+  256  git rm references.txt 
+  257  got status
+  258  git reset HEAD references.txt
+  259  git commit -m "reverting back"
+  260  git status
+  261  git add Data
+  262  ls
+  263  git log
+  264  git reset HEAD references.txt
+  265  cat references.txt
+  266  git checkout HEAD
+  267  ls
+  268  git checkout master
+  269  ls
+  270  git log --oneline 
+  271  git checkout 285cd4a references.txt
+  272  ls
+  273  git status
+  274  git add references.txt 
+  275  git commit -m "Finally retrieved the original references.txt file"
+  276  git help
+  277  man git
+  278  git help --verbose
+  279  git help --man
+  280  git help -a
+  281  git help --guide
+  282  git  help everyday
+  283  git remote add origin https://github.com/shaheen19/refereces.git
+  284  git remote -v
+  285  git push origin master references.txt
+  286  git status
+  287  ls
+  288  git push origin master 
+  289  git pull origin master
+  290  git status
+  291  git log
+  292  history > workshop-commands.txt
